@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchForComession">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="البحث عن عمولات مندوب  "
+        android:gravity="center"
+        android:background="@color/title"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Spinner
+            android:id="@+id/spinnerSearchComession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"
+            android:layout_marginRight="19dp"
+            android:layout_marginLeft="19dp"
+            android:textAlignment="center"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إسم المندوب"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+
+        <EditText
+            android:id="@+id/yearSearch"
+            android:layout_width="50dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="numberSigned"
+
+            android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+
+            android:text="السنة"/>
+
+        <EditText
+            android:id="@+id/monthSearch"
+            android:layout_width="50dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="الشهر"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:text="إبحث"
+        android:onClick="searchSaels"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/showComession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/showComessionValue"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:background="@color/colorPrimary1"
+        android:textColor="@color/white"
+        android:padding="10dp"
+
+
+
+
+
+        />
+
+
+</LinearLayout>

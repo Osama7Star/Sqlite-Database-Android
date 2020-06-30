@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imgLogo"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" وطن للمبيعات "
+        android:textSize="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+
+
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"  >
+
+
+
+    <Button
+        android:id="@+id/addDelegate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="إضافة مندوب"
+        android:onClick="addDelegate"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_weight="1"
+
+
+
+        />
+
+    <Button
+        android:id="@+id/addSales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اضافة المبيعات"
+        android:onClick="addSales"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_weight="1"
+
+        />
+
+
+</LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <Button
+          android:id="@+id/btnAddComession"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="إضافة عمولات"
+          android:onClick="addComession"
+          android:background="@color/colorPrimary"
+          android:textColor="@color/white"
+          android:layout_margin="5dp"
+          android:padding="5dp"
+          android:layout_gravity="center"
+          android:layout_weight="1"
+
+          />
+      <Button
+          android:id="@+id/showAlldelegate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=" عرض كل المناديب"
+          android:onClick="showAllDelegate"
+          android:background="@color/colorPrimary"
+          android:textColor="@color/white"
+          android:layout_weight="1"
+          android:padding="5dp"
+          android:layout_margin="5dp"
+
+
+
+
+
+          />
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"  >
+
+
+
+        <Button
+            android:id="@+id/delegateSearchSales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="البحث عن المبيعات"
+            android:onClick="delegateSearchSales"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+
+
+
+
+            />
+
+        <Button
+            android:id="@+id/delegateSearchComesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="البحث عن العمولات "
+            android:onClick="comessiondelegateSales"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+
+
+
+            />
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/svu"
+        />
+
+</LinearLayout>

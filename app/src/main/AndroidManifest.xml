@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.osama.bait">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ShowDelegateInfo"></activity>
+        <activity android:name=".AddComession" />
+        <activity android:name=".SearchForComession" />
+        <activity android:name=".searchForSales" />
+        <activity android:name=".delegateSalesActivity" />
+        <activity android:name=".monthlyComession" />
+        <activity android:name=".addSales" />
+        <activity android:name=".addComession" />
+        <activity
+            android:name=".editDelegate"
+            android:label="@string/title_activity_edit_delegate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".delegateAdapter2"
+            android:label="@string/title_activity_delegate_adapter2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".showDelegates"
+            android:label="@string/title_activity_show_delegates"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddDelegets"
+            android:label="@string/title_activity_add_delegets"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

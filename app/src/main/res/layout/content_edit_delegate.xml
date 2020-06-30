@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".editDelegate"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_edit_delegate">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تعديل بيانات المندوب"
+        android:gravity="center"
+        android:background="@color/title"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/delegateNumberEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="رقم المندوب"
+        android:textAlignment="center"
+
+        android:inputType="numberSigned"
+        />
+    <EditText
+        android:id="@+id/delegateNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="اسم المندوب "
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/delegateMainarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+
+        />
+
+        <ImageView
+            android:id="@+id/delegateImageEdit"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            />
+
+
+    <Button
+        android:id="@+id/btnDelegateEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="حفظ"
+        android:onClick="delegateEdit"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

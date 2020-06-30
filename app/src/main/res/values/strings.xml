@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">bait</string>
+    <string name="title_activity_add_delegets">AddDelegets</string>
+    <string name="title_activity_show_delegates">showDelegates</string>
+    <string name="title_activity_delegate_adapter2">delegateAdapter2</string>
+    <string name="title_activity_add_sales">addSales</string>
+    <string name="title_activity_edit_delegate">editDelegate</string>
+</resources>
